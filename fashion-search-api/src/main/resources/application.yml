@@ -1,0 +1,18 @@
+#----------------------------------------------------------------------
+# Sever Port
+#----------------------------------------------------------------------
+server:
+  port: 8082
+  shutdown: graceful
+
+spring:
+  application:
+    name: fashion-search-api
+  profiles:
+    group:
+      local:
+        - local
+        - domain-h2-local
+springdoc:
+  webjars:
+    prefix: ''

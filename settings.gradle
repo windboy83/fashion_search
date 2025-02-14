@@ -1,0 +1,4 @@
+rootProject.name = 'fashion-search'
+include 'fashion-search-api'
+include 'fashion-search-domain-h2'
+

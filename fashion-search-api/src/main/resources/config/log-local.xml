@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="DEBUG">
+  <Properties>
+    <Property name="logPath">./logs</Property>
+    <Property name="logPattern">%d{yyyyMMdd HH:mm:ss.SSS} [%thread] %-3level %logger{5} - %msg %n</Property>
+    <Property name="serviceName">general-api</Property>
+  </Properties>
+  <Appenders>
+    <Console name="console">
+      <PatternLayout pattern="${logPattern}"/>
+    </Console>
+  </Appenders>
+  <Loggers>
+    <Logger name="com.fashion_search" level="DEBUG" additivity="false">
+      <AppenderRef ref="console"/>
+    </Logger>
+    <Logger name="root" level="INFO" additivity="false">
+      <AppenderRef ref="console"/>
+    </Logger>
+  </Loggers>
+</Configuration>
